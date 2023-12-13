@@ -13,13 +13,15 @@ def check_voting_status():
     try:
         users_age = float(input('Please enter your age in numbers e.g 18: '))
         if users_age >= 18:
-            users_quest_vote = input('Are you registered to vote (please enter Yes or No: ')
+            users_quest_vote = input('Are you registered to vote (please enter Yes or No): ')
             if users_quest_vote.lower() == 'yes' or users_quest_vote.lower() == 'y':
-                return 'Please visit the following to check your polling unit https://goiodhjh.uk.godh'
+                return """To find the location of your nearest polling station, please visit the site below:
+https://wheredoivote.co.uk/"""
             else:
-                return 'Please visit https://kjhkjhfd.com to register to vote'
+                return """To register to vote, please visit the site below:
+https://www.gov.uk/register-to-vote"""
         else:
-            return 'Please wait till you are 18 years old to register to vote'
+            return 'Please wait until you are 18 years old to register to vote.'
     except ValueError:
         print('Error: input not a number.')
 
