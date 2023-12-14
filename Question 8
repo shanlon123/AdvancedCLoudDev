@@ -1,0 +1,14 @@
+#Question 8
+
+height = float(input('Please enter your height in Metres'))
+weight = float(input('Please enter your weight in KGs'))
+
+x = weight/float(height*height);
+if x < 18.5:
+    print('Underweight - You should consult your GP for medical Advice')
+if x>=18.5 and x<25:
+    print("Normal - According to your BMI you are healthy keep up the good work")
+if x >= 25 and x < 30:
+   print('Overweight - You should consult your GP for medical Advice')
+if x >= 30:
+   print('Obesity - You should consult your GP for medical Advice')
